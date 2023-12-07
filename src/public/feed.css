@@ -2,7 +2,8 @@
 
     .profile-image img {
         border-radius: 100%;
-        width: 100%; 
+        width: 77%; 
+        height: 50%;
     }
     :root {
         font-size: 10px;
@@ -74,8 +75,8 @@
     
     @media screen and (min-width: 40rem) {
         .profile-image {
-            width: calc(33.333% - 1rem);
-            display: flex;
+            /* width: calc(33.333% - 1rem);
+            display: flex; */
             justify-content: center;
             align-items: center;
             margin-right: 3rem;
@@ -238,7 +239,8 @@
         }
 
         .profile-image img {
-            width: 7.7rem;
+            width: 2rem;
+            height: 2rem;
         }
 
         .profile-user-settings {

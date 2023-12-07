@@ -92,14 +92,22 @@ h1 {
   margin-bottom: 8px;
   color: #405de6;
 }
+.button.username:hover {
+  cursor:pointer
+}
 
 /* Custom file upload styling */
 .custom-file-upload {
   display: inline-block;
   margin-top: 8px;
+  color: #405de6;
 }
-
+.custom-file-upload:hover{
+  color:purple;
+  cursor: pointer;
+}
 .custom-file-upload input {
   display: none;
+  
 }
 
