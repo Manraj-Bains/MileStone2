@@ -1,0 +1,47 @@
+[
+  {
+    "id": "90bf10a3-c9fb-406a-a35a-3e4a8db0fbf8",
+    "description": "welcome to my profile!",
+    "username": "john123",
+    "stats": {
+      "posts": 2,
+      "followers": 30,
+      "following": 30
+    },
+    "profile": "profile.jpeg",
+    "photos": [
+      "pic1.png",
+      "pic2.png"
+    ]
+  },
+  {
+    "id": "cb506c7d-1c2f-4ce8-a56f-d45f16bf34cf",
+    "description": "Hi there!",
+    "username": "sandra123",
+    "stats": {
+      "posts": 2,
+      "followers": 30,
+      "following": 30
+    },
+    "profile": "profile.jpeg",
+    "photos": [
+      "pic1.png",
+      "pic2.png"
+    ]
+  },
+  {
+    "id": "cb706c7d-1c2f-4ce8-a56f-d45f16bf34cf",
+    "description": "ooga booga",
+    "username": "manraj123",
+    "stats": {
+      "posts": 2,
+      "followers": 111,
+      "following": 777
+    },
+    "profile": "profile.jpeg",
+    "photos": [
+      "pic1.png",
+      "pic2.png"
+    ]
+  }
+]

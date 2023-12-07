@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./homePageCss" />
+  <title>User Card</title>
+</head>
+<body>
+  <div class="content-container">
+    <div class="logo-container">
+      <img src="./igLogo" alt="instagram logo" class="logo" />
+    </div>
+    <div class="main-container">
+      <h1>Users</h1>
+      <div class="users-container">
+        <% users.forEach(user => { %>
+          <div class="user-card">
+            <div class="profile-image-container">
+              <img
+                src="/profilePicture/<%= user.username %>/<%= user.profile %>"
+                alt="<%= user.username %>'s Profile Picture"
+                class="profile-img"
+              />
+            </div>
+            <div class="user-info">
+              <a href="/feed?username=<%= user.username %>">
+                <input
+                  type="button"
+                  class="button username"
+                  value="<%= user.username %>"
+                />
+              </a>
+              <form
+              action="/upload/?username=<%= user.username %>"
+              enctype="multipart/form-data"
+              method="post"
+            >
+              <label class="custom-file-upload">
+                Choose File
+                <input
+                  type="file"
+                  name="upload"
+                  accept="image/*"
+                  class="file-input"
+                  onchange="handleFileChange(this)"
+                />
+              </label>
+              <input type="submit" class="button" value="upload" />
+            </form>
+            </div>
+          </div>
+        <% }); %>
+      </div>
+    </div>
+  </div>
+  <script>
+    function handleFileChange(input) {
+      // Add any file change handling logic if needed
+      console.log("File selected:", input.files[0]);
+    }
+  </script>
+</body>
+</html>

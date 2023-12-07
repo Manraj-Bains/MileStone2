@@ -1,0 +1,26 @@
+<!-- homepage.ejs -->
+<!DOCTYPE html>
+<html>
+  <title>Homepage</title>
+  <link rel="stylesheet" type="text/css" href="/term-proj-starter/src/public/userCard.css" />
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <body>
+    <div class="content-container">
+      <div class="main-container">
+        <h1>Users</h1>
+        <div class="users-container">
+            <% users.forEach(user => { %>
+                <% include userCard.ejs %>
+              <% }); %>
+              
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

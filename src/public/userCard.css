@@ -1,0 +1,105 @@
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fafafa;
+  color: #333;
+}
+
+.content-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Logo styling */
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+/* Heading styling */
+h1 {
+  font-size: 28px;
+  margin-left: 10px;
+}
+
+/* Main container styling */
+.main-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Users container styling */
+.users-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* User card styling */
+.user-card {
+  display: flex; 
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: calc(33.33% - 20px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.user-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Profile image container styling */
+.profile-image-container {
+  flex: 0 0 auto; 
+}
+
+.profile-image-container img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+/* User info styling */
+.user-info {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+}
+
+/* Username button styling */
+.button.username {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #405de6;
+}
+
+/* Custom file upload styling */
+.custom-file-upload {
+  display: inline-block;
+  margin-top: 8px;
+}
+
+.custom-file-upload input {
+  display: none;
+}
+
